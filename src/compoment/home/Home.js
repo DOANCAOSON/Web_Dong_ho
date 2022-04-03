@@ -1,6 +1,9 @@
 import styles from './home.module.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
+import Trend from './Trend'
+import Product from './Product';
+
 
 const APIFAKESLIDER = [
   {
@@ -78,41 +81,45 @@ const Home = () => {
   }
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.slider_container} >
-          <div ref={setwidths} className={styles.slider_container_list}>
-            <div count={count} ref={widths} className={styles.slider_container_list_item}>
-              {APIFAKESLIDER.map((element, index) =>
-              (
-                <div className={styles.slider_container_list_content} key={element.id}>
-                  <div ref={windows} className={styles.slider_container_list_content_list}>
-                    <li className={styles.slider_container_list_item_name}>
-                      {element.name}
-                    </li>
-                    <li className={styles.slider_container_list_item_brand}>
-                      {element.brand}
-                    </li>
-                    <li className={styles.slider_container_list_item_description} >
-                      {element.description}
-                    </li>
-                    <button className={styles.slider_container_list_btn}>Xem Sản Phẩm</button>
+      <div className={styles.container_all}>
+        <div className={styles.container}>
+          <div className={styles.slider_container} >
+            <div ref={setwidths} className={styles.slider_container_list}>
+              <div count={count} ref={widths} className={styles.slider_container_list_item}>
+                {APIFAKESLIDER.map((element, index) =>
+                (
+                  <div className={styles.slider_container_list_content} key={element.id}>
+                    <div ref={windows} className={styles.slider_container_list_content_list}>
+                      <li className={styles.slider_container_list_item_name}>
+                        {element.name}
+                      </li>
+                      <li className={styles.slider_container_list_item_brand}>
+                        {element.brand}
+                      </li>
+                      <li className={styles.slider_container_list_item_description} >
+                        {element.description}
+                      </li>
+                      <button className={styles.slider_container_list_btn}>Xem Sản Phẩm</button>
+                    </div>
+                    <div className={styles.slider_container_list_img} >
+                      <img className={styles.slider_container_list_img_item} src={element.img} />
+                    </div>
                   </div>
-                  <div className={styles.slider_container_list_img} >
-                    <img className={styles.slider_container_list_img_item} src={element.img} />
-                  </div>
-                </div>
-              )
-              )}
+                )
+                )}
+              </div>
             </div>
-          </div>
-          
-          <div className={styles.slider_container_btn} >
-            <div className={styles.slider_container_icon_list}>
-              < BiChevronLeftCircle onClick={handleDown} className={styles.slider_container_icon_icon} />
-              < BiChevronRightCircle onClick={handleUp} className={styles.slider_container_icon_icon} />
+
+            <div className={styles.slider_container_btn} >
+              <div className={styles.slider_container_icon_list}>
+                < BiChevronLeftCircle onClick={handleDown} className={styles.slider_container_icon_icon} />
+                < BiChevronRightCircle onClick={handleUp} className={styles.slider_container_icon_icon} />
+              </div>
             </div>
           </div>
         </div>
+        <Trend />
+        <Product />
       </div>
     </>
   )
