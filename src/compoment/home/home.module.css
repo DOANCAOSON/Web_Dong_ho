@@ -22,6 +22,7 @@
 .slider_container_list {
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
 .slider_container_btn {
     position: absolute;

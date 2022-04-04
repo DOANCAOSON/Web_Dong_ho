@@ -52,9 +52,7 @@ const APIFAKESLIDER = [
 const Home = () => {
   const initial = 1;
   const [count, setCount] = useState(initial)
-  // console.log(count)
   const widths = useRef()
-  const setwidths = useRef()
   const windows = useRef()
   const apiLength = APIFAKESLIDER.length
 
@@ -64,27 +62,18 @@ const Home = () => {
   }, [])
 
   const handleUp = () => {
-    const setwidth = setwidths.current
     setCount(count < apiLength - 1 ? count + 1 : initial - 1)
-    setwidth.style.transition = "all 0.3s ease";
-    setwidth.style.transform =
-      `translateX(-${count * 100}%)`
   }
 
   const handleDown = () => {
-    const setwidth = setwidths.current
-    // setCount(count <= 0 ? apiLength : count - 1)
     setCount(count > 0 ? count - 1 : apiLength - 1)
-    setwidth.style.transition = "all 0.3s ease";
-    setwidth.style.transform =
-      `translateX(-${count * 100}%)`
   }
   return (
     <>
       <div className={styles.container_all}>
         <div className={styles.container}>
           <div className={styles.slider_container} >
-            <div ref={setwidths} className={styles.slider_container_list}>
+            <div style={{ transform: `translateX(-${count * 100}%)` }} className={styles.slider_container_list}>
               <div count={count} ref={widths} className={styles.slider_container_list_item}>
                 {APIFAKESLIDER.map((element, index) =>
                 (
