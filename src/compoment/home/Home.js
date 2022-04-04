@@ -61,6 +61,16 @@ const Home = () => {
     width.style.width = 100 * apiLength + '%'
   }, [])
 
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setCount(count < apiLength - 1 ? count + 1 : initial - 1)
+    }, 3000)
+
+    return () => {
+      clearInterval(slider)
+    }
+  }, [count])
+
   const handleUp = () => {
     setCount(count < apiLength - 1 ? count + 1 : initial - 1)
   }
