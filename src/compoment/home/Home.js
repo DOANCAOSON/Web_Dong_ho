@@ -2,7 +2,8 @@ import styles from './home.module.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
 import Trend from './Trend'
-import Product from './Product';
+import Product from './Product'
+import Productrend from './Productrend'
 
 
 const APIFAKESLIDER = [
@@ -119,6 +120,7 @@ const Home = () => {
         </div>
         <Trend />
         <Product />
+        <Productrend />
       </div>
     </>
   )
