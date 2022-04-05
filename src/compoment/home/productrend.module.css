@@ -1,0 +1,31 @@
+.productrend_container {
+    margin: 50px auto;
+    width: 1400px;
+}
+.productrend_container_heading_all {
+    display: flex;
+}
+.productrend_container_heading_item {
+    margin-right: 40px;
+    font-size: 26px;
+}
+
+/* product_main */
+.producmain_container {
+    display: flex;
+    width: 1400px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.producmain_container_list_items {
+    height: 350px;
+    width: 20%;
+}
+.producmain_container_list_img{
+    height: 70%;
+    width: 100%;
+}
+.producmain_container_list_img_item{
+    width: 100%;
+    height: 100%;
+}

@@ -73,69 +73,45 @@ const APIFAKEPRODUCT = [
     id: 12,
     name: 'Classico12',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png',
   },
   {
     id: 13,
     name: 'Classico13',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02.png',
   },
   {
     id: 14,
     name: 'Classico14',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png',
   },
   {
     id: 15,
     name: 'Classico15',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png',
   },
   {
     id: 16,
     name: 'Classico16',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png',
   },
   {
     id: 17,
     name: 'Classico17',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02.png',
   },
   {
     id: 18,
     name: 'Classico18',
     price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
+    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png',
   },
-  {
-    id: 19,
-    name: 'Classico19',
-    price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
-  },
-  {
-    id: 20,
-    name: 'Classico20',
-    price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
-  },
-  {
-    id: 21,
-    name: 'Classico21',
-    price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
-  },
-  {
-    id: 22,
-    name: 'Classico22',
-    price: 1200000,
-    img: 'http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png',
-  },
- 
+
 ]
 const Product = () => {
   const [move, setMove] = useState(0)
@@ -189,6 +165,7 @@ const Product = () => {
             </div>
           </div>
         </div>
+
       </div>
     </>
   )
