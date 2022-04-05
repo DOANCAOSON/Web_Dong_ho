@@ -99,19 +99,20 @@ const Productrend = () => {
                 ))}
 
             </div>
-            <div className={styles.producmain_container}>
+            <div className={styles.productmain_container}>
                 {APIFAKEPRODUCT.map(item => (
-                    <div key={item.id} className={styles.producmain_container_list_items}>
-                        <div className={styles.producmain_container_list_img}>
-                            <img alt="" src={item.img} className={styles.producmain_container_list_img_item} />
+                    <div key={item.id} className={styles.productmain_container_list_items}>
+                        <div className={styles.productmain_container_list_img}>
+                            <img alt="" src={item.img} className={styles.productmain_container_list_img_item} />
                         </div>
-                        <div className={styles.producmain_container_list_description}>
-                            <div className={styles.producmain_container_list_description_name}>
+                        <div className={styles.productmain_container_list_description}>
+                            <div className={styles.productmain_container_list_description_name}>
                                 {item.name}
                             </div>
-                            <div className={styles.producmain_container_list_description_price}>
+                            <div className={styles.productmain_container_list_description_price}>
                                 {item.price}đ
                             </div>
+                            <button className={styles.productmain_container_list_btn}>THÊM VÀO GIỎ</button>
                         </div>
                     </div>
                 ))}
