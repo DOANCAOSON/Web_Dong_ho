@@ -1,0 +1,140 @@
+.container_all {
+    height: auto;
+    margin-bottom: 500px;
+}
+.container {
+    width: 100%;
+    height: 600px;
+    background-color: #222222;
+}
+.slider_container:hover .slider_container_btn {
+    opacity: 1;
+    visibility: visible;
+}
+.slider_container {
+    height: 600px;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+.slider_container_list {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.slider_container_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}
+.slider_container_icon_list {
+    display: flex;
+    justify-content: space-between;
+}
+.slider_container_icon_icon {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.slider_container_list_item_name {
+    color: #fff;
+}
+.slider_container_list_item_brand {
+    color: #fff;
+}
+.slider_container_list_item_description {
+    color: #fff;
+}
+.slider_container_list_btn {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+}
+.slider_container_list_content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.slider_container_list_item {
+    display: flex;
+}
+.slider_container_list_content_list {
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(-50%);
+    left: 12%;
+    width: 554px;
+    height: 282px;
+    z-index: 100000;
+}
+.slider_container_list_img {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slider_container_list_img_item {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+.slider_container_list_item_name {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.slider_container_list_item_brand {
+    margin-bottom: 10px;
+    font-size: 56px;
+}
+.slider_container_list_item_description {
+    font-size: 14px;
+}
+.slider_container_list_btn {
+    margin: 20px 0px;
+}
+/* home boder */
+.home_boder {
+    height: 1px;
+    width: 1200px;
+    margin: 2.5rem auto;
+    background-color: #ccc;
+}
+/* Đăng kí */
+.home_singin {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.home_singin_heading {
+    font-size: 28px;
+    font-weight: bold;
+}
+.home_singin_email {
+    display: flex;
+}
+.home_singin_email_item {
+    padding: 10px 40px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.home_singin_email_btn_item {
+    background-color: #c89979;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

@@ -1,0 +1,66 @@
+.blog_container {
+    width: 1200px;
+    height: 500px;
+    margin: 10rem auto;
+}
+.blog_container_lists {
+    display: flex;
+    width: 100%;
+}
+.blog_container_list {
+    padding: 0px 24px;
+    width: 33.3333%;
+    height: 200px;
+}
+.blog_container_list_img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.products_container_list_img_item {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.blog_container_list:hover .products_container_list_img_item {
+    transform: scale(1.1);
+    border-radius: 4px;
+}
+.blog_container_list_main {
+    margin: 1.5rem 0px;
+}
+.blog_container_list_main_heading {
+    display: block; /* Fallback trong trường hợp trình duyệt không hỗ trợ display dạng box */
+    display: -webkit-box;
+    line-height: 32px; /* Fallback  */
+    max-height: 200px; /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.blog_container_list:hover .blog_container_list_main_description {
+    opacity: 0.8;
+}
+.blog_container_list_main_description {
+    display: block; /* Fallback trong trường hợp trình duyệt không hỗ trợ display dạng box */
+    display: -webkit-box;
+    line-height: 32px; /* Fallback  */
+    max-height: 200px; /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}

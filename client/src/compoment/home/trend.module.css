@@ -1,0 +1,55 @@
+.trend_container {
+    margin: 15rem 0px;
+    display: flex;
+}
+.trend_container_list {
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+.trend_container_list_item {
+    position: relative;
+    width: 47%;
+    overflow: hidden;
+}
+.trend_container_list_item:hover .trend_container_list_item_img {
+    transform: scale(1.1);
+}
+.trend_container_list_main {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.trend_container_list_main_heading {
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+}
+.trend_container_list_main_heading::before {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0;
+    height: 1px;
+    width: 100px;
+    transform: translateY(-150%);
+    background-color: #6e5745;
+}
+.trend_container_list_main_description {
+    color: #fff;
+}
+.trend_container_list_item_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.trend_container_list_main_heading {
+    font-weight: 300;
+}
+.trend_container_list_main_description {
+    font-weight: 300;
+}
