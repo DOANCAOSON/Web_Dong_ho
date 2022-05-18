@@ -17,10 +17,7 @@ const slider = new Schema(
             type: String,
             required: true,
         },
-        img: {
-            type: String,
-            required: true,
-        },
+        img: [String],
         slug: { type: String, slug: "name", unique: true },
     },
     {

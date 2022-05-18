@@ -94,7 +94,7 @@ const Routerse = ({ pink }) => {
                 <Route path="/productFemale" element={<ProductFemale />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/cartproducts" element={<CartProducts />} />
+                <Route path="/cartproducts/:id" element={<CartProducts />} />
             </Routes>
             <footer className={styles.footer}>
                 <div className={styles.footer_container}>

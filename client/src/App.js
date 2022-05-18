@@ -1,3 +1,4 @@
+import React from 'react';
 import Routerse from './compoment/routers/Route'
 import { BrowserRouter } from 'react-router-dom'
 import Globale from './compoment/globalCss/Globale'

@@ -1,0 +1,44 @@
+.cartProductPrice_link {
+    text-decoration: none !important;
+    color: #a29994;
+    margin: 0px 12px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.cartProductPrice_name {
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+.cartProductPrice_boder {
+    width: 5%;
+    height: 2px;
+    background-color: #353535;
+    margin-bottom: 10px;
+}
+.cartProductPrice_item {
+    color: #c89979;
+    font-size: 24px;
+}
+.cartProductPrice_description {
+    color: #a29994;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+.cartProductPrice_info {
+    height: 25px;
+    color: #a59b94;
+    border-top: 1px dotted #ddd;
+    font-size: 12px;
+    line-height: 25px;
+}
+.cartProductPrice_qr{
+    color: #a59b94;
+}
+.cartProductPrice_info:first-child {
+    border: none;
+}
+.cartProductPrice_modal {
+    width: 100%;
+}

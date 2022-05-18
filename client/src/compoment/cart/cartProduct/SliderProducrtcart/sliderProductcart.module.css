@@ -1,0 +1,15 @@
+.sliderProductcart_img {
+    width: 100%;
+}
+.sliderProductcarts_img-item {
+    width: 30%;
+}
+.slick-prev,
+.slick-next {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: red !important;
+    left: 20px;
+}
