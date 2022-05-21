@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import styles from "./cartProductdescription.module.css";
+import Loading from "../../../loading/Loading";
+import { getAllProducts } from "../../../../actions/productActions";
 
 export default function CartProductdescription() {
-     const settings = {
-         dots: true,
-         infinite: true,
-         speed: 500,
-         slidesToShow: 5,
-         slidesToScroll: 5,
-     };
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    };
+
+    const dispatch = useDispatch();
+
+    const productsstate = useSelector(
+        (state) => state.getAllProductsReducer
+    );
+    const { products, err, loading } = productsstate;
+    useEffect(() => {
+        dispatch(getAllProducts());
+    }, []);
+
     return (
-        <div>
+        <div className={styles.cartProductdescription_center}>
             <div className="row">
                 <div className="col-lg-2  ">
                     <div className="row">
@@ -26,34 +41,22 @@ export default function CartProductdescription() {
             </div>
             <div className="row">
                 <div className="col-lg-12 border">
-                    <div
-                        className={
-                            styles.CartProductdescription_item
-                        }
-                    >
-                        Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Sunt
-                        saepe nam dolor dolorum nulla enim
-                        excepturi quas illo aperiam omnis,
-                        hic esse! At quos consequuntur
-                        maxime nulla veniam nisi magni.
+                    <div className={styles.CartProductdescription_item}>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sunt saepe nam dolor dolorum nulla enim
+                        excepturi quas illo aperiam omnis, hic esse! At quos
+                        consequuntur maxime nulla veniam nisi magni.
                         <br />
                         <br />
-                        Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Rerum
-                        accusantium optio veniam magni
-                        labore. Dolorum nesciunt eius in
-                        doloremque laborum eligendi iusto
-                        perferendis. Dolorum unde quaerat
-                        excepturi dolor perspiciatis. Minus.
-                        Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit.
-                        Excepturi veritatis, molestiae
-                        laudantium quidem a, quas laborum
-                        reiciendis aut nostrum ducimus
-                        corporis sequi sit quis optio
-                        voluptatem incidunt nisi blanditiis
-                        inventore!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rerum accusantium optio veniam magni labore.
+                        Dolorum nesciunt eius in doloremque laborum eligendi
+                        iusto perferendis. Dolorum unde quaerat excepturi
+                        dolor perspiciatis. Minus. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Excepturi veritatis,
+                        molestiae laudantium quidem a, quas laborum reiciendis
+                        aut nostrum ducimus corporis sequi sit quis optio
+                        voluptatem incidunt nisi blanditiis inventore!
                     </div>
                 </div>
             </div>
@@ -61,32 +64,66 @@ export default function CartProductdescription() {
 
             <div>
                 <div className="row">
-                    <h4 className="col-lg-12 mt-4">
-                        SẢN PHẨM TƯƠNG TỰ
-                    </h4>
+                    <h4 className="col-lg-12 mt-4 text-left ml-4">SẢN PHẨM TƯƠNG TỰ</h4>
                 </div>
                 <div>
                     <div>
-                        <h2> Single Item</h2>
                         <Slider {...settings}>
-                            <div>
-                                <h3>1</h3>
-                            </div>
-                            <div>
-                                <h3>2</h3>
-                            </div>
-                            <div>
-                                <h3>3</h3>
-                            </div>
-                            <div>
-                                <h3>4</h3>
-                            </div>
-                            <div>
-                                <h3>5</h3>
-                            </div>
-                            <div>
-                                <h3>6</h3>
-                            </div>
+                            {products ? (
+                                products.map((item, index) => {
+                                    return (
+                                        <div key={index} className="col-sm-12 mt-3 ">
+                                            <Link
+                                                to={`/cartproducts/${item.name}`}
+                                                key={item._id}
+                                            >
+                                                <div
+                                                    className={
+                                                        styles.productmain_container_list_img__card
+                                                    }
+                                                >
+                                                    <img
+                                                        alt=""
+                                                        src={item.img}
+                                                        className={
+                                                            styles.productmain_container_list_img_item__card
+                                                        }
+                                                    />
+                                                </div>
+                                                <div
+                                                    className={
+                                                        styles.productmain_container_list_description__card
+                                                    }
+                                                >
+                                                    <div
+                                                        className={
+                                                            styles.productmain_container_list_description_name__card
+                                                        }
+                                                    >
+                                                        {item.name}
+                                                    </div>
+                                                    <div
+                                                        className={
+                                                            styles.productmain_container_list_description_price__card
+                                                        }
+                                                    >
+                                                        {item.price}đ
+                                                    </div>
+                                                    <button
+                                                        className={
+                                                            styles.productmain_container_list_btn__card
+                                                        }
+                                                    >
+                                                        THÊM VÀO GIỎ
+                                                    </button>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    );
+                                })
+                            ) : (
+                                <Loading />
+                            )}
                         </Slider>
                     </div>
                 </div>

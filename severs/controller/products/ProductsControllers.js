@@ -18,6 +18,13 @@ class ProductsControllers {
             .then((item) => res.status(200).json(item))
             .catch(next)
     }
+    findProduct(req, res, next) {
+        Products.findById({ _id: req.params.id })
+            .then((item) =>
+                res.send(item),
+            )
+            .catch(next);
+    }
 
     //[edit] /products/edit
     edit(req, res, next) {

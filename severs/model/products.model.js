@@ -16,7 +16,7 @@ const product = new Schema(
             required: true,
         },
         img: {
-            type: String,
+            type: [],
             required: true,
         },
         phobien: {

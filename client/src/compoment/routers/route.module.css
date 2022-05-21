@@ -1,157 +1,155 @@
 .header {
-    width: 100%;
-    background-color: #353535;
+ width: 100%;
+ background-color: #353535;
 }
 .header_container {
-    margin: auto;
-    width: 1200px;
-    background-color: #353535;
+ margin: auto;
+ width: 1200px;
+ background-color: #353535;
 }
 .header_list {
-    display: flex;
-    height: 60px;
-    width: 701px;
-    justify-content: space-between;
-    margin: auto;
-    color: #fff;
+ display: flex;
+ height: 60px;
+ width: 701px;
+ justify-content: space-between;
+ margin: auto;
+ color: #fff;
 }
 .header_list_item {
-    display: flex;
-    margin: auto;
+ display: flex;
+ margin: auto;
 }
 .header_list_item_link {
-    color: #fff;
-    font-size: 1rem;
+ color: #fff;
+ font-size: 1rem;
 }
 .pink {
-    color: #c89979;
+ color: #c89979;
 }
 .header_address {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    height: 60px;
-    width: 100%;
+ color: #fff;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 0.9rem;
+ height: 60px;
+ width: 100%;
 }
 .header_address_list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
 }
 .header_numberphone {
-    color: #fff;
-    margin: 0px 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ color: #fff;
+ margin: 0px 8px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 .header_icon {
-    color: #fff;
-    font-size: 20px;
-    margin: 0px 12px;
+ color: #fff;
+ font-size: 20px;
+ margin: 0px 12px;
 }
 .header_main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
 }
 .header_main_logo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+ flex: 1;
+ display: flex;
+ justify-content: center;
 }
 .header_main_logo_item {
-    height: 67px;
+ height: 67px;
 }
 .header_main_search {
-    height: 35px;
-    flex: 4;
-    display: flex;
-    justify-content: center;
+ height: 35px;
+ flex: 4;
+ display: flex;
+ justify-content: center;
 }
 .header_main_search_input {
-    width: 30%;
-    height: 100%;
+ width: 30%;
+ height: 100%;
 }
 .header_main_cart {
-    flex: 0.7;
-    display: flex;
-    margin: auto;
+ flex: 0.7;
+ display: flex;
+ margin: auto;
 }
 .header_main_search {
-    display: flex;
-    align-items: center;
+ display: flex;
+ align-items: center;
 }
 .header_main_search_input_item {
-    width: 100%;
-    padding: 8px 20px;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    font-size: 1rem;
+ padding: 10px;
+ width: 100%;
+ height: 100%;
+ border: none;
+ outline: none;
 }
 .header_main_search_icon {
-    background-color: #c89979;
-    width: 5%;
-    height: 100%;
-    border-radius: 2px;
-    font-size: 1.04rem;
-    display: flex;
+ background-color: #c89979;
+ width: 5%;
+ height: 100%;
+ font-size: 1.04rem;
+ display: flex;
 }
 .header_main_search_icon_item {
-    margin: auto;
+ margin: auto;
 }
 .header_main_cart_icon {
-    color: #fff;
-    font-size: 2.5rem;
-    margin: 0px 6px;
+ color: #fff;
+ font-size: 2.5rem;
+ margin: 0px 6px;
 }
 /* footer */
 .footer {
-    background-color: #333333;
+ background-color: #333333;
 }
 .footer_container {
-    width: 1200px;
-    margin: auto;
-    background-color: #333333;
-    padding: 30px 4px;
+ width: 1200px;
+ margin: auto;
+ background-color: #333333;
+ padding: 30px 4px;
 }
 .footer_container_list {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
+ display: flex;
+ justify-content: space-between;
+ color: #fff;
 }
 .footer_container_list_item_heading {
-    font-size: 24px;
-    margin: 14px 0px;
+ font-size: 24px;
+ margin: 14px 0px;
 }
 .footer_container_list_item_addres {
-    margin: 12px 0px;
-    font-size: 0.8rem;
-    opacity: 0.7;
+ margin: 12px 0px;
+ font-size: 0.8rem;
+ opacity: 0.7;
 }
 .footer_container_icon {
-    margin-right: 12px;
+ margin-right: 12px;
 }
 .footer_container_list_item_heading_icon {
-    margin-top: 20px;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+ margin-top: 20px;
+ width: 60%;
+ display: flex;
+ justify-content: space-between;
 }
 .footer_container_list_item_heading_icon_item {
-    font-size: 1.8rem;
+ font-size: 1.8rem;
 }
 .footer_container_border {
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
+ width: 100%;
+ height: 1px;
+ background-color: #ccc;
 }
 .footer_container_border {
-    margin: 3rem 0px;
+ margin: 3rem 0px;
 }
 .footer_container_license {
-    opacity: 0.7;
+ opacity: 0.7;
 }

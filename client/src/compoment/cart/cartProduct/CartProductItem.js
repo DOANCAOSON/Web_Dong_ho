@@ -2,6 +2,7 @@ import React from 'react'
 import SliderProductcart from './SliderProducrtcart/SliderProductcart'
 import CartProductPrice from './cartProductPrice/CartProductPrice'
 import CartProductdescription from './cartProductdescription/CartProductdescription'
+import Cartresgisterinfo from './cartresgisterinfo/Cartresgisterinfo'
 
 export default function CartProductItem() {
     return (
@@ -17,6 +18,9 @@ export default function CartProductItem() {
                 </div>
                 <div>
                     <CartProductdescription />
+                </div>
+                <div>
+                    <Cartresgisterinfo />
                 </div>
             </div>
         </>

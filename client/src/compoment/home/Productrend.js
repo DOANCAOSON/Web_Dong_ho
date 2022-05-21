@@ -28,6 +28,10 @@ const Productrend = () => {
     }, []);
     const [type, setType] = useState("Sản phẩm phổ biến");
 
+    const addProductItem = () => {
+        dispatch(addProductItem(products));
+    }
+
     return (
         <div className={styles.productrend_container}>
             <div
@@ -40,8 +44,8 @@ const Productrend = () => {
                         style={
                             types === type
                                 ? {
-                                      color: "#c89979",
-                                  }
+                                    color: "#c89979",
+                                }
                                 : {}
                         }
                         onClick={() => {
@@ -68,7 +72,7 @@ const Productrend = () => {
                     products.map((item, index) => {
                         return (
                             <Link
-                                to={`/cartproducts/${item.name}`}
+                                to={`/products/${item._id}`}
                                 key={item._id}
                                 className="col-sm-3 mt-3 "
                             >
@@ -108,6 +112,7 @@ const Productrend = () => {
                                         className={
                                             styles.productmain_container_list_btn
                                         }
+                                        onClick={addProductItem}
                                     >
                                         THÊM VÀO GIỎ
                                     </button>

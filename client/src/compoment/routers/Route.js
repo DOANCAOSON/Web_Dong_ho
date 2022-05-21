@@ -11,6 +11,8 @@ import ProductFemale from '../details/ProductFemale';
 import ProductMen from '../details/ProductMen';
 import Introduce from '../introduces/Introduce'
 import CartProducts from '../cart/CartProducts'
+import CartPaymentall from '../cart/cartPaymentall/CartPaymentall';
+import Admin from '../admin/Postadmin';
 
 
 
@@ -23,7 +25,6 @@ const Routerse = ({ pink }) => {
     return (
         <div>
             <header className={styles.header}>
-
                 <div className={styles.header_container}>
                     <div className={styles.header_address}>
                         <div className={styles.header_address_list}>
@@ -53,14 +54,16 @@ const Routerse = ({ pink }) => {
                                     placeholder="Tìm kiếm..."
                                 />
                             </div>
-                            <div className={styles.header_main_search_icon}>
+                            <div style={{ height: '100%' }} className={styles.header_main_search_icon}>
                                 <FaSistrix className={styles.header_main_search_icon_item} />
                             </div>
 
                         </div>
                         <div className={styles.header_main_cart}>
                             <IoIosHeartEmpty className={styles.header_main_cart_icon} />
-                            <FaOpencart className={styles.header_main_cart_icon} />
+                            <Link to="/cartpayment">
+                                <FaOpencart className={styles.header_main_cart_icon} />
+                            </Link>
                         </div>
                     </div>
                     <ul className={styles.header_list}>
@@ -94,7 +97,9 @@ const Routerse = ({ pink }) => {
                 <Route path="/productFemale" element={<ProductFemale />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/cartproducts/:id" element={<CartProducts />} />
+                <Route path="/products/:id" element={<CartProducts />} />
+                <Route path="/cartpayment" element={<CartPaymentall />} />
+                <Route path="/admin" element={<Admin />} />
             </Routes>
             <footer className={styles.footer}>
                 <div className={styles.footer_container}>

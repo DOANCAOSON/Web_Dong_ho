@@ -1,0 +1,14 @@
+.Cartresgisterinfo_row {
+ display: flex;
+}
+.cartresgisterinfo_input {
+ height: 100%;
+ flex: 1;
+}
+.cartresgisterinfo_btn {
+ padding: 5px 10px;
+ width: 150px;
+ border: none;
+ background-color: #c89979;
+ color: #fff;
+}

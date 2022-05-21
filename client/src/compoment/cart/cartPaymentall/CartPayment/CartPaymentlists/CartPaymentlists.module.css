@@ -1,0 +1,10 @@
+.cartPaymentlists {
+ height: 700px;
+}
+.center {
+ display: flex;
+ margin: auto;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: nowrap;
+}
