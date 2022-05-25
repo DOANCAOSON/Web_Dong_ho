@@ -1,5 +1,6 @@
-export const getItemProductsReducer = (state = { products: [] }, action) => {
-    switch (action.type) { 
+export const postItemProductsReducer = (state = { products: [] }, action) => {
+    switch (action.type) {
+
         case 'ADD_PRODUCTS_ITEM_REQUEST': return {
             loading: true,
             ...state

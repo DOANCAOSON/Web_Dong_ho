@@ -17,7 +17,7 @@ export default function CartProductItem() {
                     </div>
                 </div>
                 <div>
-                    <CartProductdescription />
+                    {/* <CartProductdescription /> */}
                 </div>
                 <div>
                     <Cartresgisterinfo />

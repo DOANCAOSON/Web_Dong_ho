@@ -8,6 +8,5 @@ export const addProductItemActions = (id) => async dispatch => {
 
     } catch (error) {
         dispatch({ type: "ADD_PRODUCTS_ITEM_FAILED", payload: error });
-
     }
 };

@@ -22,17 +22,16 @@ const Productrend = () => {
         (state) => state.getAllProductsReducer
     );
     const { products, err, loading } = productsstate;
-    console.log(productsstate);
     useEffect(() => {
         dispatch(getAllProducts());
     }, []);
     const [type, setType] = useState("Sản phẩm phổ biến");
 
-    const addProductItem = () => {
-        dispatch(addProductItem(products));
-    }
-
+    // const addProductItem = () => {
+    //     dispatch(addProductItem(products));
+    // }
     return (
+
         <div className={styles.productrend_container}>
             <div
                 className={
@@ -83,12 +82,14 @@ const Productrend = () => {
                                 >
                                     <img
                                         alt=""
-                                        src={item.img}
+                                        src={item.img[0]}
                                         className={
                                             styles.productmain_container_list_img_item
                                         }
                                     />
                                 </div>
+
+
                                 <div
                                     className={
                                         styles.productmain_container_list_description
@@ -112,7 +113,7 @@ const Productrend = () => {
                                         className={
                                             styles.productmain_container_list_btn
                                         }
-                                        onClick={addProductItem}
+                                    // onClick={addProductItem}
                                     >
                                         THÊM VÀO GIỎ
                                     </button>

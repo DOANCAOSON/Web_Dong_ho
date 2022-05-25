@@ -74,7 +74,8 @@ export default function CartProductdescription() {
                                     return (
                                         <div key={index} className="col-sm-12 mt-3 ">
                                             <Link
-                                                to={`/cartproducts/${item.name}`}
+                                                // to={`/cartproducts/${item.name}`}
+                                                to={'#'}
                                                 key={item._id}
                                             >
                                                 <div
@@ -84,7 +85,7 @@ export default function CartProductdescription() {
                                                 >
                                                     <img
                                                         alt=""
-                                                        src={item.img}
+                                                        src={item.img[0]}
                                                         className={
                                                             styles.productmain_container_list_img_item__card
                                                         }

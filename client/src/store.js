@@ -6,12 +6,14 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { getAllProductsReducer } from "./reducers/productReducers";
 import { cartReducer } from "./reducers/cartReducers";
 import { getItemProductsReducer } from "./reducers/addProductItemReducers";
+import { postItemProductsReducer } from "./reducers/createProductItemReducers";
 
 
 const finalReducer = combineReducers({
     getAllProductsReducer: getAllProductsReducer,
     cartReducer: cartReducer,
-    getItemProductsReducer: getItemProductsReducer
+    getItemProductsReducer: getItemProductsReducer,
+    postItemProductsReducer: postItemProductsReducer,
 });
 
 const initialState = {};
